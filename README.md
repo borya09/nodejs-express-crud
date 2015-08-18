@@ -15,6 +15,6 @@ Install the dependencies:
 
 With mongodb running on 'localhost', execute:
 
-`node app.js`
+`npm start`
 
 
