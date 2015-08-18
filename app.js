@@ -14,7 +14,7 @@ var app            = express();
 
 app.use(express.static(__dirname + '/public')); 	// set the static files location
 app.use(morgan('dev')); 					// log every request to the console
-app.use(bodyParser()); 						// pull information from html in POST
+app.use(bodyParser.json()); 				// pull information from requests
 app.use(methodOverride()); 					// simulate DELETE and PUT
 
 //Add the routes
@@ -31,9 +31,5 @@ mongoose.connect('mongodb://localhost/tshirt', function(err, res) {
 });
 
 app.listen(8080);
-console.log('Magic happens on port 8080'); 			// shoutout to the user
+console.log('server running on port 8080');
 
-// First example router
-app.get('/', function(req, res) {
-  res.send("Hello world!");
-});

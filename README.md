@@ -1,4 +1,20 @@
-##Simple CRUD with Node.js, Express and MongoDB using Mongoose as ODM##
+##Simple CRUD with Node##
 
-This repository host the code of my blog entry **Creating a simple CRUD with Node.js, Express, MongoDB and AngularJS, Part 1**
+API REST example with node.js + express + mongodb
+
+
+#### INSTALLATION
+
+Install the dependencies:
+
+`npm install`
+
+
+
+#### START API REST SERVER
+
+With mongodb running on 'localhost', execute:
+
+`node app.js`
+
 
